@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        header{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .big-box{
+            background-color: rgb(225, 223, 223);
+            max-width: 900px;
+            width: 100%;
+            align-items: center;
+            margin: 0% auto;
+            border-radius: 20px;
+            box-shadow: 2px 3px gray;
+        }
+        .My-picture{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            background-color: white;
+            border-radius: 50%;
+            border: 4px solid white;
+            padding: 10px;
+            margin: 10px;
+        }
+        .My-name{
+            color: white;
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 2px 4px rgb(79, 75, 75);
+        }
+        .name{
+            margin: 0%;
+        }
+        .obj{
+            font-size: 14px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .head{
+            border-radius: 20px;
+            background-color: rgb(101, 101, 205);
+            margin: 10px;
+            box-shadow: 2px 3px rgb(50, 50, 138);
+        }
+        about{
+            background-color: rgb(225, 225, 253);
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 2px 3px rgb(124, 124, 190);
+        }
+        h2{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: rgb(37, 12, 61);
+            border-bottom: solid rgb(109, 46, 109);
+            box-sizing: 20%;
+            text-shadow: 2px 3px rgb(181, 168, 168);
+        }
+        .img{
+            width: 250px;
+            border-radius: 50%;
+        }
+        .skills{
+            background-color: rgb(221, 221, 255);
+            border-radius: 20px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 2px 3px rgb(95, 95, 148);
+        }
+        span{
+            background-color: rgb(224, 239, 253);
+            padding: 10px;
+            border-radius: 40%;
+            gap: 40px;
+            margin: 10px;
+            box-shadow: 2px 3px rgb(99, 121, 141);
+
+        }
+        .skillBox {
+            display: flex;        
+            flex-wrap: wrap;        
+            justify-content: center;
+            gap: 20px;              
+            padding: 10px;
+        }
+        .projects-section{
+            background-color: lavender;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 10px;
+            box-shadow: 2px 3px rgb(83, 83, 129);
+        }
+        .projects-card{
+            background-color: white;
+            padding: 10px;
+            margin: 40px;
+            border-radius: 20px;
+            border-left: solid rgb(155, 38, 179);
+            box-shadow: 4px 6px 2px rgb(209, 207, 207);
+        }
+        h3{
+            color: rgb(49, 23, 126);
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        ul{
+            color: rgb(55, 16, 92);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .bio{
+            color: black;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .resume-btn{
+            background-color: rgb(200, 235, 244);
+            padding: 10px;
+            border-radius: 40%;
+            margin-top: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .resume-btn:hover{
+            background-color: rgb(218, 250, 250);
+            transform: translateY(-2px);
+        }
+
+        .resume{
+            background-color: rgb(206, 206, 247);
+            padding: 40px;
+            margin: 10px;
+            border-radius: 20px;
+            align-items: center;
+            text-align: center;
+            box-shadow: 2px 3px rgb(103, 103, 176);
+        }
+        .contacts{
+            background-color: rgb(72, 70, 70);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px;
+            color: whitesmoke;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 2px 3px rgb(53, 52, 52);
+        }
+        .contacts a {
+            color: #f6f8f9;
+            text-decoration: none;
+        }
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+        footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+        color: rgb(80, 80, 100);
+        font-family: sans-serif;
+        font-size: 14px;
+        border-top: 1px solid rgb(200, 200, 200);
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            about {
+                flex-direction: column; 
+                text-align: center;     
+            }
+            .img {
+                margin-top: 20px;
+                width: 180px;  
+                height: 180px;
+                object-fit: cover;
+            }
+            .big-box {
+                width: 95%;   
+                margin: 10px auto;
+            }
+            .My-name {
+                font-size: 28px;
+            }
+            .name {
+                font-size: 35px;
+            }
+            .projects-card {
+                margin: 20px 0; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box" id="bigBox">
+        <div class="head">
+             <header>
+            <img src="Harshitalogo.jpeg" alt="My Logo" class="My-picture">
+            <div class="My-name">
+                <h1 class="name">Harshita Rathore</h1>
+                <p class="obj">Showcase my web development skills and creative projects using modern web technologies.</p>
+            </div>
+        </header>
+        </div>
+        <div class="about">
+            <about>
+                <div class="about-contaner">
+                    <h2>About</h2>
+                    <p class="bio">Hi, I'm Harshita! I am a web developer who loves crafting beautiful, responsive, and user-centric websites. I specialize in frontend technologies and have a strong passion for building digital experiences that are both highly functional and visually engaging. Always learning, experimenting, and coding.</p>
+                </div>
+                <img src="pic.jpeg" alt="Harshita Picture" class="img">
+            </about>
+        </div>
+        <div class="skills">
+            <skills>
+                <h2>Skills</h2>
+                <div class="skillBox">
+                    <span>HTML</span>
+                    <span>JavaScript</span>
+                    <span>CSS</span>
+                    <span>DSA</span>
+                    <span>Java</span>
+                    <span>C++</span>
+                </div>
+            </skills>
+        </div>
+        <div class="projects-section">
+            <projects>
+                <h2>Projects</h2>
+                <div class="projects-card">
+                        <h3><a href="https://github.com/harshita713lab/Dr-maya-therapy" target="_blank">Dr. Maya Therapy Clinic</a></h3>
+                        <ul>
+                            <li><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Vercel</li>
+                            <li><strong>Description: </strong>A responsive, multi-page website built for a therapy clinic. I focused on creating a calming, accessible design (a "Safe Space" UI) using psychology-based colors so patients feel comfortable and secure while browsing.</li>
+                        </ul>
+                </div>
+                <div class="projects-card">
+                        <h3><a href="https://shield-connect-app.netlify.app/" target="_blank">Real-Time Chat Application</a></h3>
+                        <ul>
+                            <li><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Firebase</li>
+                            <li><strong>Description: </strong>A live messaging platform that allows users to send and receive messages instantly without needing to refresh the page. I designed a clean, user-friendly interface similar to popular apps like WhatsApp.</li>
+                        </ul>
+                </div>
+                <div class="projects-card">
+                        <h3><a href="" target="_blank">Virtual Data Grid</a></h3>
+                        <ul>
+                            <li><strong>Tech Stack: </strong>HTML, CSS, JavaScript</li>
+                            <li><strong>Description: </strong>A high-performance data grid built to display massive amounts of information efficiently. It uses smart rendering to only load the data you are currently looking at, ensuring the browser stays fast and smooth even with heavy data.</li>
+                        </ul>
+                </div>
+            </projects>
+        </div>
+        <div class="resume">
+            <resume>
+                <a href="harshita_rathore_resume.pdf" download class="resume-btn">Download My Resume 📄</a>
+            </resume>
+        </div>
+        <div class="contacts">
+            <contact>
+                <p><strong>E-mail: </strong>harshitar713@gmail.com</p>
+                <p><strong>Phone No. - </strong>8824127624</p>
+                <p><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/harshita-rathore-cs/" target="_blank">https://www.linkedin.com/in/harshita-rathore-cs/</a></p>
+            </contact>
+        </div>
+        <footer>
+            <p>Made with ❤️ by Harshita Rathore | &copy; 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
