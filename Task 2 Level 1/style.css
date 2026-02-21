@@ -1,0 +1,217 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 249, 250);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    font-size: 50px;
+    text-align: left;
+    font-weight: bolder;
+    color: rgb(216, 8, 74);
+}
+.hero{
+    background-image: url("https://wallpaperaccess.com/full/488480.jpg");
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    font-size: 16px;
+    margin-top: none;
+    text-align: center;
+    color: rgb(43, 46, 46);
+}
+.btnn{
+    text-decoration: none;
+    border: black;
+    background-color: rgb(164, 42, 54);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    border: solid rgb(87, 10, 10);
+    text-align: center;
+    margin-top: 20px;
+}
+.btnn:hover {
+    background-color: rgb(219, 66, 82);
+}
+h1{
+    color: rgba(222, 18, 113, 0.874);
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 10%;
+    margin-bottom: none;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(26, 28, 28);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+nav a:hover{
+    color: rgb(218, 41, 41);
+}
+h2{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(62, 43, 84);
+    margin-bottom: none;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(239, 87, 150, 0.874);
+}
+.text2{
+    font-size: 16px;
+    text-align: center;
+    margin-top: none;
+    color: rgb(42, 44, 44);
+}
+.simg{
+    height: 70px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.resion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+    border: thin solid rgb(176, 183, 183);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.imgArea{
+    display: flex;
+    flex-direction: column;
+    border: thin solid rgb(77, 81, 81);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px black;
+}
+.imgArea:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.container{
+    background-color: rgb(255, 253, 253);
+    padding: 10px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.placeImg{
+
+    display: flex;;
+    justify-content: center;
+    height: 250px;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+.placeArea{
+    display: flex;
+    flex-direction: column;
+    border: thin solid rgb(88, 86, 86);
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.placeArea:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+footer{
+    background-color: rgb(34, 35, 35);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.footer-line{
+    justify-content: space-around;
+    background-color: rgb(34, 35, 35);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.contct{
+    flex: 1;
+    max-width: 500px;
+    gap: 50px;
+}
+.contct h3{
+    color: rgb(210, 232, 251);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.contct p{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.footer-botm{
+    text-align: center;
+    font-size: 12px;
+}
+@media screen and (max-width: 900px) {
+    .resion {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;    
+    }
+    .resion{
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .hero{
+        justify-content: center;
+    }
+}
