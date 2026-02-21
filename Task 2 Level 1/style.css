@@ -26,7 +26,7 @@ header{
 }
 .text{
     font-size: 16px;
-    margin-top: none;
+    margin-top: 0;
     text-align: center;
     color: rgb(43, 46, 46);
 }
@@ -125,7 +125,7 @@ html{
 }
 .placeImg{
 
-    display: flex;;
+    display: flex;
     justify-content: center;
     height: 250px;
     border-radius: 20px;
