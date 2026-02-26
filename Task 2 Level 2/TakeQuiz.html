@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="head-section">
+        <header>
+            <h1>Take a Quiz 🎮</h1>
+        </header>
+    </div>
+
+    <div class="input-area" id="quiz-box" style="width: 90%; max-width: 600px; margin-top: 20px;">
+        
+        <div style="width: 100%; display: flex; justify-content: space-between; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">
+            <h3 style="color: rgb(73, 86, 235);">Question <span id="current-q">1</span> of <span id="total-q">?</span></h3>
+            <a href="dashboard.html" style="color: #e74c3c; text-decoration: none; font-weight: bold;">
+                <i class="fa-solid fa-xmark"></i> Quit
+            </a>
+        </div>
+
+        <h2 id="question-text" style="text-align: center; margin-bottom: 30px; font-family: 'Segoe UI', sans-serif;">Loading Question...</h2>
+
+        <div id="options-container" style="width: 100%; display: flex; flex-direction: column; gap: 10px;">
+            <button class="social-btn option-btn" id="btn-1">Option 1</button>
+            <button class="social-btn option-btn" id="btn-2">Option 2</button>
+            <button class="social-btn option-btn" id="btn-3">Option 3</button>
+            <button class="social-btn option-btn" id="btn-4">Option 4</button>
+        </div>
+
+        <button id="next-btn" class="primry-btn" style="display: none; margin-top: 30px;">
+            Next Question <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <div class="input-area" id="result-box" style="display: none; width: 90%; max-width: 600px; margin-top: 20px; text-align: center;">
+        <h1 style="font-size: 60px; margin-bottom: 10px;">🏆</h1>
+        <h2 style="color: rgb(46, 99, 224); margin-bottom: 20px;">Quiz Completed!</h2>
+        
+        <h3 style="font-size: 24px; margin-bottom: 30px;">
+            Your Score: <span id="final-score" style="color: rgb(73, 86, 235); font-weight: bold; font-size: 30px;">0</span> / <span id="total-score">0</span>
+        </h3>
+        
+        <button onclick="window.location.href='dashboard.html'" class="primry-btn">
+            <i class="fa-solid fa-house"></i> Back to Dashboard
+        </button>
+        <button id="next-btn" class="primry-btn" style="display: none; margin-top: 30px;">
+             Next Question <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

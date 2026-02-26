@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create A Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="head-section">
+        <header>
+            <h1>Create A Quiz ✍️</h1>
+        </header>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px;">
+        <h3 style="color: rgb(73, 86, 235);">Total Questions Added: <span id="question-count">0</span></h3>
+    </div>
+
+    <div class="input-area">
+        <form id="create-quiz-form">
+            
+            <div class="input-group">
+                <label>Write a Question</label>
+                <input type="text" id="question-text" placeholder="Type Your Question here..." required>
+            </div>
+
+            <div class="input-group">
+                <label>Option 1</label>
+                <input type="text" id="opt1" placeholder="Option 1" required>
+            </div>
+
+            <div class="input-group">
+                <label>Option 2</label>
+                <input type="text" id="opt2" placeholder="Option 2" required>
+            </div>
+
+            <div class="input-group">
+                <label>Option 3</label>
+                <input type="text" id="opt3" placeholder="Option 3" required>
+            </div>
+
+            <div class="input-group">
+                <label>Option 4</label>
+                <input type="text" id="opt4" placeholder="Option 4" required>
+            </div>
+
+            <div class="input-group">
+                <label>Select Correct Answer</label>
+                <select id="correct-answer" required style="width: 320px; height: 45px; border-radius: 10px; border: solid rgb(214, 214, 214); padding: 10px; font-size: 16px; margin: 10px; background-color: white;">
+                    <option value="">-- Choose correct option --</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+
+            <button type="submit" class="primry-btn">
+                <i class="fa-solid fa-floppy-disk"></i> Save Question
+            </button>
+
+            <div class="devider">
+                <span>Done adding? <a href="dashboard.html" style="color: blue; text-decoration: none;">Go to Dashboard</a></span>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="create.js"></script>
+</body>
+</html>

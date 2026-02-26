@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Knowledge Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div style="width: 100%; display: flex; justify-content: space-between; padding: 20px 40px; align-items: center; background-color: rgb(249, 249, 253); box-shadow: 0px 4px 10px rgba(0,0,0,0.05);">
+        <h1 style="font-size: 24px; margin: 0;">Knowledge Quiz</h1>
+        <button id="logout-btn" class="social-btn" style="width: auto; padding: 10px 20px; margin: 0; color: #e74c3c;">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+    </div>
+
+    <div class="input-area" style="width: 90%; max-width: 600px; margin-top: 50px;">
+        
+        <h2 id="welcome-msg" style="font-size: 28px; color: rgb(46, 99, 224); margin-bottom: 10px; font-family: 'Segoe UI', sans-serif;">Welcome, User! 👋</h2>
+        <p style="color: #555; font-size: 16px; margin-bottom: 30px; font-family: 'Segoe UI', sans-serif;">What would you like to do today?</p>
+
+        <div style="display: flex; gap: 20px; width: 100%;">
+            
+            <button onclick="window.location.href='create.html'" class="primry-btn" style="height: 120px; font-size: 18px; flex-direction: column;">
+                <i class="fa-solid fa-plus" style="font-size: 35px; margin-bottom: 10px;"></i>
+                <a href="CreateQuiz.html" class="tex-btn">Create Quiz</a>
+            </button>
+
+            <button onclick="window.location.href='quiz.html'" class="primry-btn" style="height: 120px; font-size: 18px; flex-direction: column; background-color: rgb(46, 99, 224);">
+                <i class="fa-solid fa-gamepad" style="font-size: 35px; margin-bottom: 10px;"></i>
+                <a href="TakeQuiz.html" class="tex-btn">Take Quiz</a>
+            </button>
+
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
